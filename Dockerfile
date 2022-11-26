@@ -21,6 +21,8 @@ RUN cd ~; git clone https://github.com/osrf/gzweb
 
 RUN cd ~/gzweb && git checkout gzweb_1.4
 
+RUN /bin/bash -c '. /usr/local/nvm/nvm.sh; cd /root/gzweb; npm run deploy --- -m'
+
 COPY ./entrypoint.sh /
 
 EXPOSE 11345
