@@ -11,6 +11,6 @@ jobs:
     - name: Publish to Registry
       uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
-        name: ahmgam/robotagent
+        name: ahmgam/gzweb_docker
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
